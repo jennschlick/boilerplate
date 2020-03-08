@@ -1,0 +1,20 @@
+/*-----------------------------------------------------------------------------------*/
+/* Styles
+/*-----------------------------------------------------------------------------------*/
+
+// Utilities
+@import 'partials/reset';
+@import 'partials/fonts';
+@import 'partials/functions';
+@import 'partials/mixins';
+@import 'partials/variables';
+@import 'partials/grid';
+
+// Components
+@import 'partials/footer';
+@import 'partials/header';
+@import 'partials/menus';
+@import 'partials/typography';
+
+// Pages
+@import 'partials/homepage';

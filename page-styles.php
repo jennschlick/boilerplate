@@ -7,13 +7,6 @@
 
 		<p>Lorem ipsum dolor sit amet, <strong>consectetur</strong> <em>adipiscing elit</em>. <a href="#">Ut eu turpis vel magna sagittis semper eu id massa</a>. Ut quis placerat urna. Donec sed sagittis lacus. Morbi malesuada ante tristique, venenatis tortor vitae, rutrum lectus. Integer bibendum mollis convallis. Proin ut neque id ex molestie pellentesque. Mauris quis velit ut sem fermentum poitor.</p>
 
-		<h1>Heading 1</h1>
-		<h2>Heading 2</h2>
-		<h3>Heading 3</h3>
-		<h4>Heading 4</h4>
-		<h5>Heading 5</h5>
-		<h6>Heading 6</h6>
-
 		<ul>
 			<li>Lorem ipsum dolor sit amet</li>
 			<li>Consectetur adipiscing elit
@@ -43,7 +36,25 @@
 			<cite>Lorem ipsum</cite>
 		</blockquote>
 
-		<pre>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu turpis vel magna sagittis semper eu id massa. Ut quis placerat urna. Donec sed sagittis lacus. Morbi malesuada ante tristique, venenatis tortor vitae, rutrum lectus. Integer bibendum mollis convallis. Proin ut neque id ex molestie pellentesque. Mauris quis velit ut sem fermentum poitor.</pre>
+		<h2>Heading 2</h2>
+
+		<p>Lorem ipsum dolor sit amet, <strong>consectetur</strong> <em>adipiscing elit</em>. <a href="#">Ut eu turpis vel magna sagittis semper eu id massa</a>. Ut quis placerat urna. Donec sed sagittis lacus. Morbi malesuada ante tristique, venenatis tortor vitae, rutrum lectus. Integer bibendum mollis convallis. Proin ut neque id ex molestie pellentesque. Mauris quis velit ut sem fermentum poitor.</p>
+
+		<h3>Heading 3</h3>
+
+		<p>Lorem ipsum dolor sit amet, <strong>consectetur</strong> <em>adipiscing elit</em>. <a href="#">Ut eu turpis vel magna sagittis semper eu id massa</a>. Ut quis placerat urna. Donec sed sagittis lacus. Morbi malesuada ante tristique, venenatis tortor vitae, rutrum lectus. Integer bibendum mollis convallis. Proin ut neque id ex molestie pellentesque. Mauris quis velit ut sem fermentum poitor.</p>
+
+		<h4>Heading 4</h4>
+
+		<p>Lorem ipsum dolor sit amet, <strong>consectetur</strong> <em>adipiscing elit</em>. <a href="#">Ut eu turpis vel magna sagittis semper eu id massa</a>. Ut quis placerat urna. Donec sed sagittis lacus. Morbi malesuada ante tristique, venenatis tortor vitae, rutrum lectus. Integer bibendum mollis convallis. Proin ut neque id ex molestie pellentesque. Mauris quis velit ut sem fermentum poitor.</p>
+
+		<h5>Heading 5</h5>
+
+		<p>Lorem ipsum dolor sit amet, <strong>consectetur</strong> <em>adipiscing elit</em>. <a href="#">Ut eu turpis vel magna sagittis semper eu id massa</a>. Ut quis placerat urna. Donec sed sagittis lacus. Morbi malesuada ante tristique, venenatis tortor vitae, rutrum lectus. Integer bibendum mollis convallis. Proin ut neque id ex molestie pellentesque. Mauris quis velit ut sem fermentum poitor.</p>
+
+		<h6>Heading 6</h6>
+
+		<p>Lorem ipsum dolor sit amet, <strong>consectetur</strong> <em>adipiscing elit</em>. <a href="#">Ut eu turpis vel magna sagittis semper eu id massa</a>. Ut quis placerat urna. Donec sed sagittis lacus. Morbi malesuada ante tristique, venenatis tortor vitae, rutrum lectus. Integer bibendum mollis convallis. Proin ut neque id ex molestie pellentesque. Mauris quis velit ut sem fermentum poitor.</p>
 
 	<?php endwhile; ?>
 <?php else : ?>

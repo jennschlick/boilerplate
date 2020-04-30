@@ -169,6 +169,14 @@
 		"oAP": "/page.php",
 		"oF": 0
 		},
+	"/php.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/php.php",
+		"oF": 0
+		},
 	"/screenshot.png": {
 		"ft": 32768,
 		"iS": 6703,

@@ -3,6 +3,13 @@
 /* Shortcodes
 /*-----------------------------------------------------------------------------------*/
 
+// Current year
+// Usage: [year]
+function basetheme_current_year($atts) {
+ return date('Y');
+}
+add_shortcode('year', 'basetheme_current_year');
+
 // Site URL
 // Usage: [url]
 function basetheme_shortcode_site_url($atts, $content = null) {

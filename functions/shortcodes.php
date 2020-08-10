@@ -40,3 +40,47 @@ function basetheme_permalink($atts) {
  }
 }
 add_shortcode('permalink', 'basetheme_permalink');
+
+// Button with icon
+// Usage: [button link="http://www.example.com" target="blank" icon="icon1|icon2" text="Lorem ipsum"]
+function basetheme_button($atts) {
+  $a = shortcode_atts(array(
+  'link' => '#',
+  'icon' => '',
+  'text' => '',
+  'target' => ('blank' == $target) ? '_blank' : '',
+  ), $atts );
+  $output = '<p><a href="' . esc_url( $a['link'] ) . '" class="button ' . esc_attr( $a['icon'] ) . '" target="' . esc_attr($a['target']) . '">' . esc_attr( $a['text'] ) . '</a></p>';
+  return $output;
+}
+add_shortcode('button', 'basetheme_button');
+
+// Link with icon
+// Usage: [arrow link="http://www.example.com" target="blank" text="Lorem ipsum"]
+function basetheme_link($atts, $content = null) {
+	extract(shortcode_atts(array(
+		'link'    => '',
+		'target' => '',
+		'text'   => '',
+	), $atts));
+
+	$content = $text ? $text : $content;
+
+	if ($link) {
+		$link_attr = array(
+			'href'   => esc_url($link),
+			'target' => ('blank' == $target) ? '_blank' : '',
+			'class'  => 'link-arrow'
+		);
+
+		$link_attrs_str = '';
+
+		foreach ($link_attr as $key => $val) {
+			if ($val) {
+				$link_attrs_str .= ' ' . $key . '="' . $val . '"';
+			}
+		}
+		return '<p><a' . $link_attrs_str . '><span>' . do_shortcode($content) . '</span></a></p>';
+	}
+}
+add_shortcode('arrow', 'basetheme_link');

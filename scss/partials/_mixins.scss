@@ -46,6 +46,13 @@
 @import "mixins/grid-framework";
 @import "mixins/grid";
 // @import "mixins/float";
+
+@mixin clearfix {
+  clear: both;
+  content: '';
+  display: table;
+}
+
 @mixin button {
   border-radius: 20px;
   padding: $grid-gutter-width;

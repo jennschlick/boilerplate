@@ -11,7 +11,7 @@ function basetheme_styles_scripts() {
 	wp_dequeue_style( 'wp-block-library' );
 
 	// Enqueue scripts
-  wp_enqueue_script( 'scripts', get_template_directory_uri() . '/js/scripts.js' );
+  // wp_enqueue_script( 'scripts', get_template_directory_uri() . '/js/scripts.js' );
 
 	// Enqueue styles
 	wp_enqueue_style( 'styles', get_template_directory_uri() . '/css/styles.css' );

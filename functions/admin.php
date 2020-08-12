@@ -6,20 +6,38 @@
 // Remove dashboard welcome panel and widgets
 remove_action('welcome_panel', 'wp_welcome_panel');
 
-function basetheme_disable_default_dashboard_widgets() {
-  global $wp_meta_boxes;
-  unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_activity']);
-  unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_right_now']);
-  unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_recent_comments']);
-  unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_incoming_links']);
-  unset($wp_meta_boxes['dashboard']['normal']['core']['dashboard_plugins']);
-  unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_primary']);
-  unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_secondary']);
-  unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_quick_press']);
-  unset($wp_meta_boxes['dashboard']['side']['core']['dashboard_recent_drafts']);
-  unset($wp_meta_boxes['dashboard']['normal']['core']['yoast_db_widget']);
+function basetheme_remove_dashboard_widgets() {
+  remove_meta_box( 'dashboard_activity', 'dashboard', 'normal');
+  remove_meta_box( 'dashboard_incoming_links', 'dashboard', 'normal' );
+  remove_meta_box( 'dashboard_plugins', 'dashboard', 'normal' );
+  remove_meta_box( 'dashboard_primary', 'dashboard', 'side' );
+  remove_meta_box( 'dashboard_secondary', 'dashboard', 'normal' );
+  remove_meta_box( 'dashboard_quick_press', 'dashboard', 'side' );
+  remove_meta_box( 'dashboard_recent_drafts', 'dashboard', 'side' );
+  remove_meta_box( 'dashboard_recent_comments', 'dashboard', 'normal' );
+  remove_meta_box( 'dashboard_right_now', 'dashboard', 'normal' );
+  remove_meta_box( 'dashboard_site_health', 'dashboard', 'normal');
+  remove_meta_box( 'semperplugins-rss-feed', 'dashboard', 'normal');
 }
-add_action('wp_dashboard_setup', 'basetheme_disable_default_dashboard_widgets', 999);
+add_action( 'admin_init', 'basetheme_remove_dashboard_widgets' );
+
+// Remove admin columns
+function basetheme_remove_columns( $columns ) {
+  unset($columns['author']);
+  unset($columns['categories']);
+  unset($columns['comments']);
+  unset($columns['date']);
+  unset($columns['seodesc']);
+  unset($columns['seokeywords']);
+  unset($columns['seotitle']);
+  unset($columns['tags']);
+  return $columns;
+}
+function remove_column_init() {
+  add_filter( 'manage_posts_columns' , 'basetheme_remove_columns' );
+  add_filter( 'manage_pages_columns' , 'basetheme_remove_columns' );
+}
+add_action( 'admin_init' , 'remove_column_init' );
 
 // Remove comment support
 function basetheme_remove_comment_support() {

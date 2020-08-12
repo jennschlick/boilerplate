@@ -41,8 +41,7 @@ add_action( 'admin_init' , 'remove_column_init' );
 
 // Increase number of pages and posts shown per page
 function basetheme_per_page( $result, $option, $user ) {
-  if ( (int)$result < 1 )
-  return 999;
+  return 100;
 }
 add_filter( 'get_user_option_edit_page_per_page', 'basetheme_per_page', 10, 3 );
 add_filter( 'get_user_option_edit_post_per_page', 'basetheme_per_page', 10, 3 );

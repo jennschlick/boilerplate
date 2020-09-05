@@ -2,6 +2,10 @@
 /* Typography
 /*-----------------------------------------------------------------------------------*/
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: $default-font-color;
   font-family: $default-font-family;

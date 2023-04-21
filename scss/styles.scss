@@ -2,21 +2,35 @@
 /* Styles
 /*-----------------------------------------------------------------------------------*/
 
-// Utilities
+// Normalize
 @import 'partials/normalize';
-@import 'partials/reset';
+
+// Fonts
 @import 'partials/fonts';
-@import 'partials/functions';
-@import 'partials/mixins';
+
+// Variables
 @import 'partials/variables';
+
+// Helpers
+@import 'partials/helpers';
+
+// Root
+@import 'partials/root';
+
+// Grid
 @import 'partials/grid';
 
+// Editor
+@import 'partials/editor';
+
 // Components
-@import 'partials/buttons';
 @import 'partials/footer';
 @import 'partials/header';
 @import 'partials/menus';
 @import 'partials/typography';
 
 // Pages
-@import 'partials/homepage';
+// ...
+
+// Third-party libraries
+// ...

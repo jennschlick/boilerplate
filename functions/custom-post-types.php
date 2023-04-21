@@ -1,37 +1,40 @@
 <?php
 /*-----------------------------------------------------------------------------------*/
-/* Custom post types
+/* Custom Post Types
 /*-----------------------------------------------------------------------------------*/
 
-// function basetheme_custom_post_types() {
-// 	$labels = array(
-// 		'name' => __('Lorem Ipsums'),
-// 		'singular_name' => __('Lorem Ipsum'),
-// 		'add_new' => __('Add New'),
-// 		'add_new_item' => __('Add Lorem Ipsum'),
-// 		'edit_item' => __('Edit Lorem Ipsum'),
-// 		'new_item' => __('Add Lorem Ipsum'),
-// 		'view_item' => __('View Lorem Ipsum'),
-// 		'search_items' => __('Search Lorem Ipsum'),
-// 		'not_found' =>  __('Nothing found'),
-// 		'not_found_in_trash' => __('Nothing found'),
-// 		'parent_item_colon' => ''
-// 	);
-//
-// 	$args = array(
-// 		'labels' => $labels,
-// 		'public' => false,
-// 		'publicly_queryable' => true,
-// 		'menu_icon' => 'dashicons-admin-page',
-// 		'show_ui' => true,
-// 		'query_var' => false,
-// 		'rewrite' => array('slug' => 'loremipsum'),
-// 		'capability_type' => 'post',
-// 		'hierarchical' => false,
-// 		'supports' => array('title','editor','thumbnail','revisions'),
-// 		'has_archive' => false
-// 	);
-//
-// 	register_post_type('loremipsum', $args);
-// }
-// add_action('init', 'basetheme_custom_post_types');
+function boilerplate_custom_post_types() {
+
+	// Example
+	// $labels = array(
+	// 	'name' => __('Example'),
+	// 	'singular_name' => __('Example'),
+	// 	'add_new' => __('Add New'),
+	// 	'add_new_item' => __('Add'),
+	// 	'edit_item' => __('Edit'),
+	// 	'new_item' => __('Add'),
+	// 	'view_item' => __('View'),
+	// 	'search_items' => __('Search'),
+	// 	'not_found' =>  __('Nothing found'),
+	// 	'not_found_in_trash' => __('Nothing found'),
+	// 	'parent_item_colon' => ''
+	// );
+	// $args = array(
+	// 	'labels' => $labels,
+	// 	'public' => false,
+	// 	'publicly_queryable' => true,
+	// 	'menu_icon' => 'dashicons-admin-page',
+	// 	'show_ui' => true,
+	// 	'query_var' => false,
+	// 	'rewrite' => array('slug' => 'project'),
+	// 	'capability_type' => 'post',
+	// 	'hierarchical' => false,
+	// 	'show_in_rest' => true,
+	// 	'supports' => array('title','editor','thumbnail','revisions'),
+	// 	'has_archive' => false
+	// );
+	// register_post_type('example', $args);
+
+}
+
+add_action('init', 'boilerplate_custom_post_types');

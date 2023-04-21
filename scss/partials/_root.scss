@@ -1,0 +1,22 @@
+/*-----------------------------------------------------------------------------------*/
+/* Root
+/*-----------------------------------------------------------------------------------*/
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+:target:before {
+	@media (min-width: $large-min) {
+		content: '';
+		display: block;
+		height: 100px;
+		margin: -100px 0 0;
+	}
+}
+
+html {
+	scroll-behavior: smooth;
+}

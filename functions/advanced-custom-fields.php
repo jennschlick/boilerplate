@@ -1,10 +1,21 @@
 <?php
 /*-----------------------------------------------------------------------------------*/
-/* Advanced Custom Fields plugin functions
+/* Advanced Custom Fields
 /*-----------------------------------------------------------------------------------*/
 
-// function basetheme_json_save_point( $path ) {
-//   $path = get_stylesheet_directory() . '/acf-json';
-//   return $path;
+/*-----------------------------------------------------------------------------------*/
+/* Save field groups
+/*-----------------------------------------------------------------------------------*/
+
+// function boilerplate_json_save_point( $path ) {
+// 	$path = get_stylesheet_directory() . '/acf-json';
+// 	return $path;
 // }
-// add_filter( 'acf/settings/save_json', 'basetheme_json_save_point' );
+
+// add_filter( 'acf/settings/save_json', 'boilerplate_json_save_point' );
+
+/*-----------------------------------------------------------------------------------*/
+/* Allow shortcodes in text fields
+/*-----------------------------------------------------------------------------------*/
+
+// add_filter( 'acf/format_value/type=text', 'do_shortcode' );

@@ -3,9 +3,8 @@
 /* Menu functions
 /*-----------------------------------------------------------------------------------*/
 
-register_nav_menus(
-	array(
-		'main'	=>	__( 'Main Menu', 'basetheme' ),
-		'footer'	=>	__( 'Footer Menu', 'basetheme' ),
-	)
-);
+// register_nav_menus(
+// 	array(
+// 		'main'	=>	__( 'Main Menu', 'boilerplate' ),
+// 	)
+// );
